@@ -18,3 +18,10 @@
     font-weight: 500;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'myriadpro-condensed';
+    src: url('/fonts/MyriadPro-Cond.otf');
+    font-weight: normal;
+    font-style: normal;
+}

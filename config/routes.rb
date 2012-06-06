@@ -6,6 +6,7 @@ Alejandraaviles::Application.routes.draw do
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
   resources :pages
+  match 'obra', :to => 'pages#obra', :as => :obra
   root :to => "pages#home"
 
   # Sample of named route:
