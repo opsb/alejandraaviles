@@ -6,10 +6,24 @@ Alejandraaviles::Application.routes.draw do
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
   resources :pages
-  %w{obra biografia contacto}.each do |page_name|
+  %w{
+    obra 
+    biografia 
+    contacto 
+    contenido 
+    registro 
+    texto_curatorial 
+    dualidades_poeticas
+    interrupciones_en_la_imagen
+    yyyy
+    proceso
+    amantes
+    iam
+    serigrafia
+  }.each do |page_name|
     match page_name, :to => "pages##{page_name}", :as => page_name    
   end
-  root :to => "pages#home"
+  root :to => redirect('/obra')
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase

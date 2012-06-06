@@ -1,0 +1,17 @@
+<div class="contained">
+	<%= render :partial => "obra_nav" %>
+	<%= render :partial => 'lightbox', :locals => { 
+		:images => expand_image_paths("SENTIDO INVERSO/contenido/", (5..9)), 
+		:gallery => "a"} 
+	%>	
+	<hr/>	
+	<%= render :partial => 'lightbox', :locals => { 
+		:images => expand_image_paths("SENTIDO INVERSO/contenido/", (1..4)), 
+		:gallery => "b"} 
+	%>	
+	<hr />	
+	<%= render :partial => 'lightbox', :locals => { 
+		:images => expand_image_paths("SENTIDO INVERSO/contenido/", (10..12)), 
+		:gallery => "c"} 
+	%>
+</div>

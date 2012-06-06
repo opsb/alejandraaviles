@@ -9,6 +9,8 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 body {
   font-family:myriadpro, helvetica;
   border-top:15px solid #ddd;
+/*  border-bottom:15px solid #ddd;*/
+  padding-bottom:80px;  
 }
 
 h1 {
@@ -16,6 +18,10 @@ h1 {
   font-weight:bold;
   margin-bottom:20px;
   text-transform:uppercase;
+}
+
+h3 {
+  font-weight:500;
 }
 
 .contained {
@@ -62,6 +68,9 @@ h1 {
 #main-nav a {
   text-decoration:none;
   color:black;
+  display:block;
+  padding:3px 2px 0px 2px;
+  margin-bottom:5px;
 }
 
 #main-nav li {
@@ -70,23 +79,31 @@ h1 {
   font-size:1.1em;
   font-weight:500;
   letter-spacing:2px;
+  margin-bottom:-2px;
 }
 
 #side-box {
   text-transform:uppercase;
   text-align:right;
-  width:170px;
-  margin-left:-210px;
+  width:210px;
+  margin-left:-230px;
   float:left;
 }
 
+#side-box a {
+  text-decoration:none;
+  color:black;
+  padding-top:2px;
+}
+
 #side-box h3 {
-  font-size:1.2em;
-  font-weight:bold;
+  font-size:1.1em;
+  font-weight:500;
 }
 
 #side-box li {
   font-size:0.9em;
+  margin-bottom:2px;
 }
 
 #side-box .section {
@@ -102,4 +119,18 @@ h1 {
 p {
   width:550px;
   text-align:justify;
+  margin-bottom:20px;
+}
+
+.highlighted {
+  background:#ccc;
+  padding-left:4px !important;
+  padding-right:2px !important;
+}
+
+hr {
+  color: #ccc;
+  background-color: #ccc;
+  border-style:solid;
+  border-bottom:none;
 }

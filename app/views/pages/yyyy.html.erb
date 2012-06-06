@@ -1,0 +1,7 @@
+<div class="contained">
+	<%= render :partial => "obra_nav" %>
+	<%= render :partial => 'lightbox', :locals => { 
+		:images => expand_image_paths("FOTOGRAFÍA/YYYY/123", (1..5)), 
+		:gallery => "a"} 
+	%>	
+</div>

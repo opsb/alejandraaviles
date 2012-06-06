@@ -1,0 +1,17 @@
+<div class="contained">
+	<%= render :partial => "obra_nav" %>
+	<%= render :partial => 'lightbox', :locals => { 
+		:images => expand_image_paths("FOTOGRAFÍA/DUALIDADES POETICAS/", (1..5)), 
+		:gallery => "a"} 
+	%>
+	<hr />
+	<%= render :partial => 'lightbox', :locals => { 
+		:images => expand_image_paths("FOTOGRAFÍA/DUALIDADES POETICAS/", (6..12)), 
+		:gallery => "b"} 
+	%>	
+	<hr />	
+	<%= render :partial => 'lightbox', :locals => { 
+		:images => expand_image_paths("FOTOGRAFÍA/DUALIDADES POETICAS/", (13..18)), 
+		:gallery => "c"} 
+	%>	
+</div>

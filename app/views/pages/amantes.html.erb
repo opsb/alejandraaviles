@@ -1,0 +1,12 @@
+<div class="contained">
+	<%= render :partial => 'proceso_nav' %>
+	<%= render :partial => 'lightbox', :locals => { 
+		:images => expand_image_paths("PROCESO/AMANTES ANTROPOFAGOS/", (1..12).map{|i|"#{i}A"}), 
+		:gallery => "a"} 
+%>
+	<hr />
+		<%= render :partial => 'lightbox', :locals => { 
+			:images => expand_image_paths("PROCESO/AMANTES ANTROPOFAGOS/", ('A'..'J')), 
+			:gallery => "b"} 
+	%>	
+</div>
