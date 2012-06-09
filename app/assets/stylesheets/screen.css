@@ -20,6 +20,11 @@ h1 {
   text-transform:uppercase;
 }
 
+h2 {
+  font-size:1em;
+  text-transform:uppercase;
+}
+
 h3 {
   margin-top:80px;
   font-weight:500;
@@ -147,6 +152,7 @@ hr {
   background-color: #ccc;
   border-style:solid;
   border-bottom:none;
+  margin-bottom:30px;
 }
 
 .video {
