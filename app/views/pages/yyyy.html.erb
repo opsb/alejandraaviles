@@ -1,7 +1,12 @@
 <div class="contained">
 	<%= render :partial => "obra_nav" %>
+	
+	<h1>YYYY</h1>
 	<%= render :partial => 'lightbox', :locals => { 
-		:images => expand_image_paths("FOTOGRAFÍA/YYYY/123", (1..5)), 
+		:images => expand_image_paths("FOTOGRAFÍA/YYYY/123", (1..5)),
+		:titles => (1..4).map{"YYYY // FOTOGRAFÍA DIGITAL / 2010"} + [
+			"MONTAJE YYYY // 2010",
+		],
 		:gallery => "a"} 
 	%>	
 </div>
