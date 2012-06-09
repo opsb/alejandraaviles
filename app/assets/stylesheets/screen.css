@@ -155,6 +155,10 @@ hr {
   margin-bottom:30px;
 }
 
+hr.silent {
+  border-style:none;
+}
+
 .video {
   
 }
