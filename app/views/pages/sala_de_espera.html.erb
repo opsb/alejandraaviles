@@ -1,0 +1,11 @@
+<div class="contained">
+	<%= render :partial => "obra_nav" %>
+	<%= render :partial => 'lightbox', :locals => { 
+		:images => expand_image_paths("sala_de_espera/", ('a'..'c')), 
+		:gallery => "a"} 
+	%>	
+	<hr />
+	<iframe width="400" height="225" src="http://www.youtube.com/embed/d9_18rXMDZA" frameborder="0" allowfullscreen></iframe>	
+	<hr />
+	<%= image_tag('sala_de_espera/sala_de_espera.jpg') %>
+</div>
