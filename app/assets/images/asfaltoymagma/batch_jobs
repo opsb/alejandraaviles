@@ -1,0 +1,55 @@
+for %%x in (*-preview.jpg) do convert -resize 100x100! %%x .\square.jpg
+for x in (*-preview.jpg) do convert -resize 100x100! $x .\square.jpg
+for $x in (*-preview.jpg) do convert -resize 100x100! $x .\square.jpg
+for FILE in *.-preview.jpg; do convert $FILE  -thumbnail 100x100^ -gravity center -extent 100x100 "$FILE-square.jpg"; done
+for FILE in $(*.-preview.jpg); do convert $FILE  -thumbnail 100x100^ -gravity center -extent 100x100 "$FILE-square.jpg"; done
+for FILE in $(ls *-preview.jpg); do convert $FILE  -thumbnail 100x100^ -gravity center -extent 100x100 "$FILE-square.jpg"; done
+for FILE in $(ls *.jpg); echo $FILE; done
+for FILE in $(ls *.jpg) do; echo $FILE; done
+for FILE in $(ls *.jpg); do echo $FILE; done
+for FILE in $(ls *.jpg); do convert $FILE  -thumbnail 100x100^ -gravity center -extent 100x100 "$FILE.thumbnail.jpg"; done
+for FILE in $(ls *.); do echo $(basename $FILE); done
+for FILE in $(ls *.jpg); do echo $(basename $FILE); done
+for FILE in $(ls *.); do echo ${FILE##*/}; done
+for FILE in $(ls *.jpg); do echo ${FILE##*/}; done
+for FILE in $(ls $(1-5).jpg); do echo ${FILE##*/}; done
+for FILE in $(ls *.jpg); do echo ${FILE##*/}; done
+for FILE in $(ls *.jpg); do echo ${FILE##*/}; done
+for FILE in $(ls *.); do echo ${FILE%%.*}; done
+for FILE in $(ls *.jpg); do echo ${FILE%%.*}; done
+for FILE in $(ls *.jpg); do echo "${FILE%%.*} => $FILE"; done
+for FILE in {1..5}.jpg; do echo "${FILE%%.*} => $FILE"; done
+for INDEX in {1..5}; do convert "$INDEX.jpg" -thumbnail 100x100^ -gravity center -extent 100x100  "$INDEX.thumbnail.jpg"; done
+for INDEX in {6..12}; do convert "$INDEX.jpg" -thumbnail 100x100^ -gravity center -extent 100x100  "$INDEX.thumbnail.jpg"; done
+for INDEX in {13..18}; do convert "$INDEX.jpg" -thumbnail 100x100^ -gravity center -extent 100x100  "$INDEX.thumbnail.jpg"; done
+for FILE in $(ls); do mv $FILE "$FILE.jpg" ;done
+for FILE in $(ls); do convert $FILE.jpg -thumbnail 100x100^ -gravity center -extent 100x100 "${FILE%.*}.thumbnail.jpg"; done
+for FILE in $(ls); echo "${FILE%.*}.thumbnail.jpg"; done
+for FILE in $(ls); do echo "${FILE%.*}.thumbnail.jpg"; done
+for FILE in $(ls); do convert $FILE.jpg -thumbnail 100x100^ -gravity center -extent 100x100 "${FILE%.*}.thumbnail.jpg"; done
+for FILE in $(ls); do convert $FILE -thumbnail 100x100^ -gravity center -extent 100x100 "${FILE%.*}.thumbnail.jpg"; done
+for FILE in $(ls); do convert $FILE -thumbnail 100x100^ -gravity center -extent 100x100 "${FILE%.*}.thumbnail.jpg"; done
+for FILE in $(ls "$(1..7)c"); do echo $FILE; done
+for FILE in $(ls "{1..7}c"); do echo $FILE; done
+for FILE in $(ls "${1..7}c"); do echo $FILE; done
+for FILE in $(ls {1..7}c); do echo $FILE; done
+for FILE in $(ls {1..7}c.jpg); do echo $FILE; done
+for FILE in $(ls {1..7}c.jpg); do convert $FILE.jpg -thumbnail 100x100^ -gravity center -extent 100x100 "${FILE%.*}.thumbnail.jpg"; done
+for FILE in $(ls {1..7}c.jpg); do convert $FILE -thumbnail 100x100^ -gravity center -extent 100x100 "${FILE%.*}.thumbnail.jpg"; done
+for FILE in $(ls); do convert $FILE -thumbnail 100x100^ -gravity center -extent 100x100 "${FILE%.*}.thumbnail.jpg"; done
+for FILE in $(ls); do convert $FILE -thumbnail 100x100^ -gravity center -extent 100x100 "${FILE%.*}.thumbnail.jpg"; done
+for FILE in $(ls); do convert $FILE -thumbnail 100x100^ -gravity center -extent 100x100 "${FILE%.*}.thumbnail.jpg"; done
+for FILE in $(ls *.jpg | grep -v thumbnail); do echo $FILE; done
+for FILE in $(ls *.jpg | grep -v thumbnail); do convert $FILE -resize 800x600 $FILE; done
+for FILE in $(ls *.jpg | grep -v thumbnail); do convert $FILE -resize 800x600 $FILE; done
+for FILE in $(ls *.jpg | grep -v thumbnail); do convert $FILE -resize 800x600 $FILE; done
+for FILE in $(ls *.jpg | grep -v thumbnail); do convert $FILE -resize 800x600 $FILE; done
+for FILE in $(ls *.jpg | grep -v thumbnail); do convert $FILE -resize 800x600 $FILE; done
+for FILE in $(ls *.jpg | grep -v thumbnail); do convert $FILE -resize 800x600 $FILE; done
+for FILE in $(ls *.jpg | grep -v thumbnail); do convert $FILE -resize 800x600 $FILE; done
+for FILE in $(ls *.jpg | grep -v thumbnail); do convert $FILE -resize 800x600 $FILE; done
+for FILE in $(ls *.jpg | grep -v thumbnail); do convert $FILE -resize 800x600 $FILE; done
+for FILE in $(ls *still.jpg); do echo $FILE; done
+for FILE in $(ls vid*.jpg); do echo $FILE; done
+for FILE in $(ls vid*.jpg); do echo $FILE; done
+for FILE in $(ls vid*.jpg); do convert $FILE -thumbnail 100x100^ -gravity center -extent 100x100 "${FILE%.*}.thumbnail.jpg"; done

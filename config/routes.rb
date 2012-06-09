@@ -21,7 +21,8 @@ Alejandraaviles::Application.routes.draw do
     iam
     serigrafia
     autorretrato
-    hemorragia 
+    hemorragia
+    asfaltoymagma
   }.each do |page_name|
     match page_name, :to => "pages##{page_name}", :as => page_name    
   end
