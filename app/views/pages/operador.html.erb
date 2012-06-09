@@ -1,0 +1,15 @@
+<div class="contained">
+	<%= render :partial => "proceso_nav" %>
+	
+	<%= render :partial => 'lightbox', :locals => { 
+		:images => expand_image_paths("operador/", (1..7)), 
+		:gallery => "b"} 
+	%>	
+	
+	<p>Basado en la ciudad de Tijuana, el proyecto Operador de Arte busca activar la práctica artística emergente a través de acciones específicas tales como diálogos y ejercicios de carácter teórico-práctico, fundamentados en la revisión tanto del trabajo como de los propios intereses de los participantes. El objetivo es enriquecer discursos y ampliar perspectivas de artistas emergentes, coordinados en un espacio efímero, donde el intercambio de ideas culmine en la exhibición de dichos procesos.</p>
+
+	<p>El principal interés de Operador de Arte es funcionar como punto de reunión para dar seguimiento a propuestas de arte joven, valiéndose para ello del apoyo de otros artistas y curadores invitados, además de facilitar el acceso a diversos materiales de consulta durante los encuentros y asesorías.</p>
+	
+
+	<%= link_to image_tag("http://2.bp.blogspot.com/-8AcSpTiG9ls/Tae2-xy9mLI/AAAAAAAAADI/gDBwQdKAWXM/s620/pseudologo3.jpg", :height => "40px"), 'http://operadordearte.blogspot.com.es/' %>	
+</div>

@@ -25,6 +25,7 @@ Alejandraaviles::Application.routes.draw do
     asfaltoymagma
     sala_de_espera
     miscelanea
+    operador    
   }.each do |page_name|
     match page_name, :to => "pages##{page_name}", :as => page_name    
   end
