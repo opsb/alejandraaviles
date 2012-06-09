@@ -21,7 +21,20 @@ h1 {
 }
 
 h3 {
+  margin-top:80px;
   font-weight:500;
+  margin-bottom:5px;
+}
+
+#side-box h3 {
+  margin-top:0px;
+  margin-bottom:0px;  
+}
+
+h4 {
+  margin-top:40px;
+  font-style:italic;
+  margin-bottom:10px;
 }
 
 .contained {
@@ -137,4 +150,13 @@ hr {
 
 .video {
   
+}
+
+.links img {
+  height:25px;
+}
+
+.links .wrapper {
+  width:150px;
+  display:inline-block;
 }
