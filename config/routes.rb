@@ -20,6 +20,7 @@ Alejandraaviles::Application.routes.draw do
     amantes
     iam
     serigrafia
+    autorretrato
   }.each do |page_name|
     match page_name, :to => "pages##{page_name}", :as => page_name    
   end
