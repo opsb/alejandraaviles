@@ -1,12 +1,30 @@
 <div class="contained">
 	<%= render :partial => 'proceso_nav' %>
+	
+	<h1>AMANTES ANTROPÓFAGOS</h1>
+	
+	<h4>
+	La antropofagia, es el acto de incluir carne u otros tejidos de humanos en la dieta. </h4>
+
+	<p class="full">Esta pieza se podría describir como una especie de cuento, sin lugar, principio ni final. Consiste básicamente en la realización de un escenario, en dónde se desarrollan una serie de acciones sin sentido. Todo comienza a darse en un momento íntimo que tienen dos adolescentes. El protagonista es el personaje masculino, sus deseos y las obsesiones perturbadas.</p>
+	
+	<h4>Acciones</h4>
+	<p class="full">Mastica zacate// búsqueda de la atracción, cortejo.
+	Espiral en la entrepierna// momento muy personal. 
+	Correteando en el bosque// inocencia y búsqueda por el contacto.
+	Entrañas del sentimiento// carne tejidos, colores de la piel, texturas liquidas. 
+	Inocencia e hilariedad// caballos, conejos, juegos, animales, parjaros.
+	*Acompañan sonidos de la naturaleza, agua, crujidos, insectos como en el interior de una cueva, etc.</p>
+	<hr />
+	<h2>Vídeo stills</h2>
 	<%= render :partial => 'lightbox', :locals => { 
-		:images => expand_image_paths("PROCESO/AMANTES ANTROPOFAGOS/", (1..12).map{|i|"#{i}A"}), 
+		:images => expand_image_paths("PROCESO/AMANTES ANTROPOFAGOS/", (1..10).map{|i|"#{i}A"}), 
 		:gallery => "a"} 
 %>
 	<hr />
-		<%= render :partial => 'lightbox', :locals => { 
-			:images => expand_image_paths("PROCESO/AMANTES ANTROPOFAGOS/", ('A'..'J')), 
-			:gallery => "b"} 
+	<h2>Filmación</h2>
+	<%= render :partial => 'lightbox', :locals => { 
+		:images => expand_image_paths("PROCESO/AMANTES ANTROPOFAGOS/", ('A'..'J')), 
+		:gallery => "b"} 
 	%>	
 </div>
