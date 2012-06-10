@@ -1,36 +1,41 @@
 <div class="contained">
 	<%= render :partial => "obra_nav" %>
 	
-	<h2>Colección de consecuencias</h2>
-	<%= render :partial => 'lightbox', :locals => { 
-		:images => expand_image_paths("SENTIDO INVERSO/contenido/", (5..9)),
-		:title => "COLECCIÓN DE CONSECUENCIAS // FOTOGRAFÍA DIGITAL / 2011",
-		:gallery => "a"} 
-	%>	
-	<hr/>	
+	<div class="section">
+		<h2>Colección de consecuencias</h2>
+		<%= render :partial => 'lightbox', :locals => { 
+			:images => expand_image_paths("SENTIDO INVERSO/contenido/", (5..9)),
+			:title => "COLECCIÓN DE CONSECUENCIAS // FOTOGRAFÍA DIGITAL / 2011",
+			:gallery => "a"} 
+		%>	
+	</div>
 	
-	<h2>Es más evidente para el oido que para la vista</h2>
-	<%= render :partial => 'lightbox', :locals => { 
-		:images => expand_image_paths("SENTIDO INVERSO/contenido/", (1..4)), 
-		:titles => (1..3).map{"ES MÁS EVIDENTE PARA EL OIDO QUE PARA LA VISTA // FOTOGRAFÍA DIGITAL / 2010"} + ["CERCANOS E INDIFERENTES // FOTOGRAFÍA DIGITAL / 2010"],
-		:gallery => "b"} 
-	%>	
-	<hr />	
+	<div class="section">
+		<h2>Es más evidente para el oido que para la vista</h2>
+		<%= render :partial => 'lightbox', :locals => { 
+			:images => expand_image_paths("SENTIDO INVERSO/contenido/", (1..4)), 
+			:titles => (1..3).map{"ES MÁS EVIDENTE PARA EL OIDO QUE PARA LA VISTA // FOTOGRAFÍA DIGITAL / 2010"} + ["CERCANOS E INDIFERENTES // FOTOGRAFÍA DIGITAL / 2010"],
+			:gallery => "b"} 
+		%>	
+	</div>
 	
-	<h2>Instalación</h2>
-	<%= render :partial => 'lightbox', :locals => { 
-		:images => expand_image_paths("SENTIDO INVERSO/contenido/", (10..12)), 
-		:titles => [
-			"SENTIDO INVERSO // INSTALACIÓN, 2.60x1.80x3.45m / 2011",
-			"ASUNTOS NO RESUELTOS // INSTALACIÓN, 5x3.45x5.50m / 2011",
-			"ALMA // VIDEOINSTALACIÓN / 2011"
-		],
-		:gallery => "c"} 
-	%>
-	<hr />
+	<div class="section">
+		<h2>Instalación</h2>
+		<%= render :partial => 'lightbox', :locals => { 
+			:images => expand_image_paths("SENTIDO INVERSO/contenido/", (10..12)), 
+			:titles => [
+				"SENTIDO INVERSO // INSTALACIÓN, 2.60x1.80x3.45m / 2011",
+				"ASUNTOS NO RESUELTOS // INSTALACIÓN, 5x3.45x5.50m / 2011",
+				"ALMA // VIDEOINSTALACIÓN / 2011"
+			],
+			:gallery => "c"} 
+		%>
+	</div>
 	
-	<h2>Vídeo</h2>
-	<%= link_to image_tag("SENTIDO INVERSO/contenido/vid-1-still.thumbnail.jpg"), "http://youtube.googleapis.com/v/UPZ4aNMhyCQ?rel=0", :rel => "shadowbox[d];width=640;height=480;player=swf", :class => "video" %>
-	<%= link_to image_tag("SENTIDO INVERSO/contenido/vid-2-still.thumbnail.jpg"), "http://youtube.googleapis.com/v/qQB2_sUHOfE?rel=0", :rel => "shadowbox[d];width=640;height=480;player=swf", :class => "video" %>	
-	<%= link_to image_tag("SENTIDO INVERSO/contenido/vid-3-still.thumbnail.jpg"), "http://youtube.googleapis.com/v/j7MOqSAcm-c?rel=0", :rel => "shadowbox[d];width=640;height=480;player=swf", :class => "video" %>	
+	<div class="section">
+		<h2>Vídeo</h2>
+		<%= link_to image_tag("SENTIDO INVERSO/contenido/vid-1-still.thumbnail.jpg"), "http://youtube.googleapis.com/v/UPZ4aNMhyCQ?rel=0", :rel => "shadowbox[d];width=640;height=480;player=swf", :class => "video" %>
+		<%= link_to image_tag("SENTIDO INVERSO/contenido/vid-2-still.thumbnail.jpg"), "http://youtube.googleapis.com/v/qQB2_sUHOfE?rel=0", :rel => "shadowbox[d];width=640;height=480;player=swf", :class => "video" %>	
+		<%= link_to image_tag("SENTIDO INVERSO/contenido/vid-3-still.thumbnail.jpg"), "http://youtube.googleapis.com/v/j7MOqSAcm-c?rel=0", :rel => "shadowbox[d];width=640;height=480;player=swf", :class => "video" %>	
+	</div>
 </div>

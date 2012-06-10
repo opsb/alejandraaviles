@@ -1,11 +1,18 @@
 <div class="contained">
 	<%= render :partial => "obra_nav" %>
-	<%= render :partial => 'lightbox', :locals => { 
-		:images => expand_image_paths("asfaltoymagma/", (1..4)), 
-		:gallery => "a"} 
-	%>	
-	<hr />
-	<iframe width="400" height="300" src="http://www.youtube.com/embed/vfBAUb5hoW0?rel=0" frameborder="0" allowfullscreen></iframe>
-	<hr />
-	<iframe width="400" height="300" src="http://www.youtube.com/embed/TsqrYbaNAZs?rel=0" frameborder="0" allowfullscreen></iframe>
+	
+	<div class="section divided">
+		<%= render :partial => 'lightbox', :locals => { 
+			:images => expand_image_paths("asfaltoymagma/", (1..4)), 
+			:gallery => "a"} 
+		%>	
+	</div>
+	
+	<div class="section divided">
+		<iframe width="400" height="300" src="http://www.youtube.com/embed/vfBAUb5hoW0?rel=0" frameborder="0" allowfullscreen></iframe>
+	</div>
+	
+	<div class="section">
+		<iframe width="400" height="300" src="http://www.youtube.com/embed/TsqrYbaNAZs?rel=0" frameborder="0" allowfullscreen></iframe>
+	</div>
 </div>

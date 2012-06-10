@@ -1,21 +1,24 @@
 <div class="contained">
 	<%= render :partial => "obra_nav" %>
 	
-	<h2>Video de registro</h2>
-	<iframe width="640" height="480" src="http://www.youtube.com/embed/Wia_cnIPWE8?rel=0" frameborder="0" allowfullscreen></iframe>	
-	<hr />
+	<div class="section">
+		<h2>Video de registro</h2>
+		<iframe width="640" height="480" src="http://www.youtube.com/embed/Wia_cnIPWE8?rel=0" frameborder="0" allowfullscreen></iframe>	
+	</div>
+
+	<div class="section">	
+		<h2>Fotografía de registro</h2>
+		<%= render :partial => 'lightbox', :locals => { 
+			:images => expand_image_paths("SENTIDO INVERSO/registro/", ('A' ..'N')), 
+			:gallery => "a"} 
+		%>	
+	</div>
 	
-	<h2>Fotografía de registro</h2>
-	<%= render :partial => 'lightbox', :locals => { 
-		:images => expand_image_paths("SENTIDO INVERSO/registro/", ('A' ..'N')), 
-		:gallery => "a"} 
-	%>	
-	<hr />
-	
-	<h2>Proceso de montaje</h2>
-	<%= render :partial => 'lightbox', :locals => { 
-		:images => expand_image_paths("SENTIDO INVERSO/registro/", (1..7).map{|i|"#{i}c"}), 
-		:gallery => "b"} 
-	%>	
-	<hr />
+	<div class="section">
+		<h2>Proceso de montaje</h2>
+		<%= render :partial => 'lightbox', :locals => { 
+			:images => expand_image_paths("SENTIDO INVERSO/registro/", (1..7).map{|i|"#{i}c"}), 
+			:gallery => "b"} 
+		%>	
+	</div>
 </div>

@@ -1,22 +1,25 @@
 <div class="contained">
 	<%= render :partial => 'proceso_nav' %>
+	
+	<div class="section divided">
 	<%= render :partial => 'lightbox', :locals => { 
 		:images => expand_image_paths("PROCESO/SERIGRAFIA/", (1..5)), 
 		:gallery => "a"} 
 %>
-
-	<hr />
+	</div>
 	
+	<div class="section divided">
 		<%= render :partial => 'lightbox', :locals => { 
 			:images => expand_image_paths("PROCESO/SERIGRAFIA/", (1..4).map{|i|"#{i}b"}), 
 			:gallery => "b"} 
-	%>
+		%>
+	</div>
 	
-	<hr />
-	
+	<div class="section">
 		<%= render :partial => 'lightbox', :locals => { 
 			:images => expand_image_paths("PROCESO/SERIGRAFIA/", (1..4).map{|i|"#{i}c"}), 
 			:gallery => "c"} 
-	%>		
+		%>		
+	</div>
 
 </div>

@@ -15,16 +15,20 @@
 	Entrañas del sentimiento// carne tejidos, colores de la piel, texturas liquidas. 
 	Inocencia e hilariedad// caballos, conejos, juegos, animales, parjaros.
 	*Acompañan sonidos de la naturaleza, agua, crujidos, insectos como en el interior de una cueva, etc.</p>
-	<hr />
-	<h2>Vídeo stills</h2>
-	<%= render :partial => 'lightbox', :locals => { 
-		:images => expand_image_paths("PROCESO/AMANTES ANTROPOFAGOS/", (1..10).map{|i|"#{i}A"}), 
-		:gallery => "a"} 
-%>
-	<hr />
-	<h2>Filmación</h2>
-	<%= render :partial => 'lightbox', :locals => { 
-		:images => expand_image_paths("PROCESO/AMANTES ANTROPOFAGOS/", ('A'..'J')), 
-		:gallery => "b"} 
-	%>	
+	
+	<div class="section">
+		<h2>Vídeo stills</h2>
+		<%= render :partial => 'lightbox', :locals => { 
+			:images => expand_image_paths("PROCESO/AMANTES ANTROPOFAGOS/", (1..10).map{|i|"#{i}A"}), 
+			:gallery => "a"} 
+	%>
+	</div>
+	
+	<div class="section">
+		<h2>Filmación</h2>
+		<%= render :partial => 'lightbox', :locals => { 
+			:images => expand_image_paths("PROCESO/AMANTES ANTROPOFAGOS/", ('A'..'J')), 
+			:gallery => "b"} 
+		%>	
+	</div>
 </div>

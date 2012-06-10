@@ -179,3 +179,12 @@ hr.silent {
   width:150px;
   display:inline-block;
 }
+
+.section {
+  margin-bottom:20px;
+}
+
+.divided {
+  border-bottom:1px solid #eee;
+  padding-bottom:10px;
+}

@@ -2,18 +2,25 @@
 	<%= render :partial => "obra_nav" %>
 	<h1>Dualidades poéticas</h1>
 	<p class="full">El origen de cada fotografía viene de la documentación de viajes, reuniones familiares y exposiciones de arte, entonces forman parte de mi entorno cotidiano, de personas que me rodean, recorridos por el paisaje o actividades diarias. Cada díptico es una historia nueva, una imagen compuesta pero individual, se manejan como un poste que deberá enlazarse a su par a través de relaciones metafóricas, denotando diferentes conceptos como la contemplación, la infancia, la fragilidad, el tiempo, el deseo, la sexualidad, el dilema, el miedo y los procesos.</p>
+	
+	<div class="section divided">
 	<%= render :partial => 'lightbox', :locals => { 
 		:images => expand_image_paths("FOTOGRAFIA/DUALIDADES POETICAS/", (1..5)), 
 		:gallery => "a"} 
 	%>
-	<hr />
+	</div>
+	
+	<div class="section divided">
 	<%= render :partial => 'lightbox', :locals => { 
 		:images => expand_image_paths("FOTOGRAFIA/DUALIDADES POETICAS/", (6..12)), 
 		:gallery => "b"} 
 	%>	
-	<hr />	
+	</div>
+	
+	<div class="section">
 	<%= render :partial => 'lightbox', :locals => { 
 		:images => expand_image_paths("FOTOGRAFIA/DUALIDADES POETICAS/", (13..18)), 
 		:gallery => "c"} 
 	%>	
+	</div>
 </div>
