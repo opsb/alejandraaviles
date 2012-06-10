@@ -155,11 +155,12 @@ p.full {
 }
 
 hr {
-  color: #ccc;
-  background-color: #ccc;
+  color: #eee;
+  background-color: #eee;
   border-style:solid;
   border-bottom:none;
-  margin-bottom:30px;
+  margin-bottom:20px;
+  margin-top:10px;
 }
 
 hr.silent {
