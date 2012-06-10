@@ -34,7 +34,8 @@ h3 {
 
 #side-box h3 {
   margin-top:0px;
-  margin-bottom:0px;  
+  margin-bottom:0px;
+  font-size:0.9em !important;  
 }
 
 h4 {
